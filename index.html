@@ -5,8 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edie | Homepage</title>
   <link rel="icon" href="./images/Icono_FLK_Azul.ico">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <h1>Edie Homepage</h1>
+  <header class="main-header">
+    <span class="logo">Edie</span>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Our Works</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section id="home" class="home">
+    <article class="home__call-to-action">
+      <p>Unhappy with your website?</p>
+      <h1>We create beautiful and fast web services</h1>
+    </article>
+    <figure class="home__image">
+      <img src="./images/heroImage.jpg" alt="Photo 1">
+    </figure>
+    <article class="home__join-us">
+      <h2>Story, emotion and purpose</h2>
+      <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+      <div class="contact-us">
+        <label for="email" class="contact-us__label">Want us to contact you?</label>
+        <div class="contact-us__input-group">
+          <input type="email" id="email" placeholder="Email">
+          <button>Join</button>
+        </div>
+      </div>
+    </article>
+  </section>
 </body>
 </html>
