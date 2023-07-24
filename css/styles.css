@@ -149,3 +149,91 @@ body {
   color: var(--gray6);
   cursor: pointer;
 }
+
+.services {
+  padding: 4rem 2rem;
+}
+
+.services__title {
+  width: 21.6rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 21rem;
+  height: 26rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px 0 var(--gray4);
+}
+
+.card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 1rem;
+  background-color: var(--gray4);
+}
+
+.card__icon.card__icon--red {
+  background-color: var(--red1);
+}
+
+.card__icon.card__icon--green {
+  background-color: var(--green1);
+}
+
+.card__icon.card__icon--blue {
+  background-color: var(--blue2);
+}
+
+.card__icon > :first-child {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card__description {
+  font-size: 1rem;
+  color: var(--gray2);
+}
+
+.card__button {
+  width: 7.3rem;
+  height: 3.2rem;
+  border-radius: .8rem;
+  background-color: var(--gray5);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray3);
+  border: none;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: var(--blue2);
+  color: #FFF;
+}
