@@ -314,3 +314,136 @@ body {
   font-size: 1rem;
   color: inherit;
 }
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 100dvh;
+  padding: 2rem;
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.1rem;
+  width: 18rem;
+}
+
+.team__info__action {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--red1);
+}
+
+.team__info__title {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.team__info__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray2);
+}
+
+.team__gallery {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 40rem;
+  height: 100%;
+}
+
+.team__gallery figure {
+  background-color: var(--gray5);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.team__gallery figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__gallery > figure:first-child {
+  place-self: center;
+  width: 100%;
+  max-width: 20rem;
+  height: 20rem;
+}
+
+.team__gallery .wrapper {
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+}
+
+.team__gallery .wrapper figure:nth-child(1) {
+  max-width: 16rem;
+  height: 16rem;
+}
+
+.team__gallery .wrapper figure:nth-child(2) {
+  max-width: 18rem;
+  height: 18rem;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+}
+
+.clients__review {
+  width: 60rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.client__avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: .8rem;
+  background-color: var(--gray5);
+  overflow: hidden;
+}
+
+.client__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.client__info__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.client__info__other {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray3);
+}
