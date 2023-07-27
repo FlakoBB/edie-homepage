@@ -53,6 +53,14 @@ body {
   color: inherit;
 }
 
+.main-header .burguer-menu {
+  display: none;
+}
+
+.main-header .burguer-menu > :first-child {
+  font-size: 1.5rem;
+}
+
 .home {
   padding: 2rem 6rem;
 }
@@ -126,6 +134,7 @@ body {
 }
 
 .contact-us__input-group input {
+  width: calc(100% - 6.3rem);
   padding: .2rem 0 .2rem .6rem;
   background: none;
   border: none;
@@ -263,7 +272,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-width: 34rem;
   min-height: 40rem;
 }
 
@@ -496,10 +504,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  font-size: 1.8rem;
 }
 
 .socials__icons > * {
+  font-size: 1.8rem;
   color: var(--gray6);
   cursor: pointer;
 }
@@ -518,4 +526,83 @@ body {
   color: inherit;
   text-decoration: none;
   font-weight: 800;
+}
+
+/* ? Responsive */
+
+@media (max-width: 1023px) {
+  * {
+    font-size: 14px;
+  }
+
+  .main-header .menu {
+    display: none;
+  }
+
+  .main-header .burguer-menu {
+    display: block;
+  }
+
+  .home__call-to-action {
+    margin-left: 0;
+    max-width: auto;
+  }
+
+  .home__join-us {
+    margin-left: 0;
+  }
+
+  .project__image {
+    height: 20rem;
+  }
+
+  .clients__review {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header,
+  .home,
+  .business,
+  .services,
+  .team,
+  .clients,
+  .footer {
+    padding-inline: 2rem;
+  }
+
+  .services__title,
+  .business__title {
+    width: auto;
+  }
+
+  .business__main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+
+  .business__main-content > :nth-child(odd) {
+    margin-top: 0;
+  }
+
+  .project {
+    min-height: auto;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .team__gallery {
+    width: auto;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
 }
